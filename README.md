@@ -62,18 +62,22 @@ Add the following to the composer.json file..
 	    }
 	}
 ```
+
 ###git
+
 ```
 	git clone https://github.com/bainternet/SQLite-simple-store.git
 ```
 
-###manual
+###manual   
 simply [download the latest version][1] and include it.
 
-##Methods
-####get($key,$default)
+##Methods   
+
+###get($key,$default)
     gets a specific value based on key, if the value has expired false will be returned. you can pass a default value as a second parameter to be returned if no value exists or is expired.
-####set($key,$value)
+
+###set($key,$value)
     stores a value in the database.
 ####del($key)
     Deletes a value of the given key.
