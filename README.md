@@ -53,7 +53,9 @@ $s->set('user_1',
 ### composer
 To install and use via the composer PHP package manager just take these steps:
 
-If you don’t already have one, create the file composer.json in the root of your new project that is going to use SQLite-simple-store.
+If you don’t already have one, create the file composer.json in the root of your new project that 
+is going to use SQLite-simple-store.
+
 Add the following to the composer.json file..
 ```
 	{
@@ -74,8 +76,9 @@ simply [download the latest version][1] and include it.
 
 ## Methods   
 
-#### get($key,$default)
-    gets a specific value based on key, if the value has expired false will be returned. you can pass a default value as a second parameter to be returned if no value exists or is expired.
+#### get($key,$default)  
+gets a specific value based on key, if the value has expired false will be returned. you can pass a default value as
+a second parameter to be returned if no value exists or is expired.
 
 #### set($key,$value)
     stores a value in the database.
@@ -83,12 +86,14 @@ simply [download the latest version][1] and include it.
     Deletes a value of the given key.
 #### keys($validate)
     get all keys in the db.
-    if $validate is true (default) expired keys and values will get deleted and will not be returned. set $validate to false to get all keys even if they have expired.
+    if $validate is true (default) expired keys and values will get deleted and will not be returned. set $validate 
+    to false to get all keys even if they have expired.
 #### exists($key)
     checks if a key exists and is not expired
 #### get_all($validate)
     get all values in the db.
-    if $validate is true (default) expired values will get deleted and will not be returned. set $validate to false to get all values even if they have expired.
+    if $validate is true (default) expired values will get deleted and will not be returned. set $validate to false 
+    to get all values even if they have expired.
 #### delete_all()
     deletes all values from db.
 #### incr($key,$by = 1)
